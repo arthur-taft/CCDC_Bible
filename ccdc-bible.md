@@ -254,7 +254,7 @@ Remember to check `/var/www/html`
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
@@ -626,7 +626,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
@@ -844,7 +844,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
@@ -985,7 +985,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
@@ -1110,7 +1110,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
@@ -1217,7 +1217,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - Download scripts
     
     ```
-    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz 
+    curl -O https://github.com/SUU-Cybersecurity-Club/CCDC-Scripts/releases/latest/linux-hardening.tar.xz
     ```
 
 - Extract archive and enter directory
