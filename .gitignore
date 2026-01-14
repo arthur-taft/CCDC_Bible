@@ -2,3 +2,7 @@ fonts/
 work/
 .dockerignore
 ccdc-bible.pdf
+ccdc-bible.aux
+ccdc-bible.log
+ccdc-bible.out
+ccdc-bible.toc

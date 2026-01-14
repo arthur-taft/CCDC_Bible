@@ -15,7 +15,7 @@
     margin=1in
 ]{geometry}
 
-\input{build/preamble.tex}
+\input{build/tex-preamble.tex}
 \input{build/buildinfo.tex}
 
 \title{CCDC Bible}
@@ -510,6 +510,14 @@ tar -xf <filename>.tar
 tar -xf <filename>.tar --strip-components=2 etc/passwd
 \end{lstlisting}
     \end{itemize}
+
+    \begin{tipbox}{Tar Flags}
+
+    Most tar flags are pretty self explanitory, like
+    \passthrough{\lstinline!c!} for compress and
+    \passthrough{\lstinline!x!} for extract
+
+    \end{tipbox}
 
     \subsubsection{Database}\label{database}
 

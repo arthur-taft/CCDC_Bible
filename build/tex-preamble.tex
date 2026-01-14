@@ -18,9 +18,10 @@
 \usepackage{amssymb}
 \usepackage[most]{tcolorbox}
 
+\newcommand{\passthrough}[1]{#1}
+
 \providecommand{\version}{}%
 \providecommand{\builddate}{\today}%
-\newcommand{\passthrough}[1]{#1}
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
@@ -74,18 +75,18 @@
 
 \definecolor{lightgray}{rgb}{0.95, 0.95, 0.95}
 \definecolor{darkgray}{rgb}{0.4, 0.4, 0.4}
-\definecolor{suured}{HTML}{db0000}
-\definecolor{suulightred}{HTML}{c38887}
+\definecolor{darkyellow}{rgb}{245, 209, 5}
+\definecolor{lightyellow}{rgb}{250, 228, 105}
 
 \newtcolorbox{tipbox}[1]{
-    colback=suulightred,
-    colframe=suured,
+    colback=yellow!5!white,
+    colframe=yellow!60!black,
     boxrule=0.5pt,
     title={#1},
     fonttitle=\bfseries\sffamily,
     enhanced,
     attach boxed title to top left={yshift=-2mm,xshift=5mm},
-    borderline west={4pt}{0pt}{suured},
+    borderline west={4pt}{0pt}{yellow!75!black},
     sharp corners,
     left=5pt, right=5pt, top=10pt, bottom=10pt
 }

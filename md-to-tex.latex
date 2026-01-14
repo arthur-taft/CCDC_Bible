@@ -23,7 +23,7 @@ $if(geometry)$
 ]{geometry}
 $endif$
 
-\input{build/preamble.tex}
+\input{build/tex-preamble.tex}
 \input{build/buildinfo.tex}
 
 \title{$title$}
