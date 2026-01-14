@@ -388,6 +388,10 @@ Remember to check `/var/www/html`
     tar -xf <filename>.tar --strip-components=2 etc/passwd
     ```
 
+::: {.tipbox data-title="Tar Flags"}
+Most tar flags are pretty self explanitory, like `c` for compress and `x` for extract
+:::
+
 ### Database 
 
 - Change root password
