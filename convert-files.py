@@ -32,15 +32,16 @@ args = parser.parse_args()
 # Set files
 input_file_path = Path(args.input)
 output_file_path = Path(args.output)
-preamble_file_path = Path("build/preamble.tex")
 buildinfo_file_path = Path("build/buildinfo.tex")
 template_file_path = Path("md-to-tex.latex")
 tipbox_file_path = Path("build/tipbox.lua")
 
 if args.landscape:
     metadata_file_path = Path("build/landscape-meta.yaml")
+    preamble_file_path = Path("build/landscape-preamble.tex")
 else:
     metadata_file_path = Path("build/meta.yaml")
+    preamble_file_path = Path("build/preamble.tex")
 
 if args.markdown_to_tex:
     operation = "md_to_tex"
