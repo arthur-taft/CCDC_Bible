@@ -388,10 +388,6 @@ Remember to check `/var/www/html`
     tar -xf <filename>.tar --strip-components=2 etc/passwd
     ```
 
-::: {.tipbox data-title="Tar Flags"}
-Most tar flags are pretty self explanitory, like `c` for compress and `x` for extract
-:::
-
 ### Database 
 
 - Change root password
@@ -1063,7 +1059,9 @@ If you're lame and don't run Hayden's script follow these instructions
     ```
     sed -i -e '/^mirrorlist/d;/^#baseurl=/{s,^#,,;s,/mirror,/vault,;}' /etc/yum.repos.d/CentOS*.repo
     ```
+
     If that doesn't work, then run this
+
     ```
     sed -i -e '/^mirrorlist/d;/^baseurl=/{s,^#,,;s,/mirror,/vault,;}' /etc/yum.repos.d/CentOS*.repo
     ```
@@ -1082,7 +1080,7 @@ If you're lame and don't run Hayden's script follow these instructions
 
     ```
     systemctl stop chronyd
-    crontab -e (remove currl)
+    crontab -e (remove curl)
     systemctl restart cron
     chmod -R 555 prestashop
 
@@ -1158,6 +1156,7 @@ If you're lame and don't run Hayden's script follow these instructions
 - mv to sql file
 
 - Update 
+
     ```php
     ps_employee set passwd = md5('<cookie>more-secure-with-this') where id_employee = 1;
     ```

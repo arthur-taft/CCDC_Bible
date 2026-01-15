@@ -1,7 +1,11 @@
 title: "CCDC Bible"
 author: "CCDC Team Blood, Sweat, and Tears"
 geometry:
-  - margin=1in
+  - landscape
+  - top=1in
+  - bottom=1in
+  - inner=1in
+  - textwidth=6in
 classoption:
   - titlepage
 mainfont: "Noto Serif"
