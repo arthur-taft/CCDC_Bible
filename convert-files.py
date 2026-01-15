@@ -24,6 +24,7 @@ parser.add_argument("--tex_to_pdf", type=bool, default=False, help="convert tex 
 parser.add_argument(
     "--markdown_to_pdf", type=bool, default=True, help="Convert markdown to pdf"
 )
+parser.add_argument("--landscape", type=bool, default=False, help="Build landscape pdf")
 
 
 args = parser.parse_args()
@@ -31,11 +32,15 @@ args = parser.parse_args()
 # Set files
 input_file_path = Path(args.input)
 output_file_path = Path(args.output)
-metadata_file_path = Path("build/meta.yaml")
 preamble_file_path = Path("build/preamble.tex")
 buildinfo_file_path = Path("build/buildinfo.tex")
 template_file_path = Path("md-to-tex.latex")
 tipbox_file_path = Path("build/tipbox.lua")
+
+if args.landscape:
+    metadata_file_path = Path("build/landscape-meta.yaml")
+else:
+    metadata_file_path = Path("build/meta.yaml")
 
 if args.markdown_to_tex:
     operation = "md_to_tex"

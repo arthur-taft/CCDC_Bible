@@ -2,10 +2,7 @@ FROM pandoc/extra:latest
 
 WORKDIR /data
 
-RUN apk add --no-cache fontconfig font-noto && fc-cache -fv 
-
-#COPY tex/extsizes/extarticle.cls /usr/local/texmf/tex/latex/extsizes/extarticle.cls
-#RUN mktexlsr
+RUN apk add --no-cache fontconfig font-noto python3 && fc-cache -fv 
 
 ENV TEXINPUTS=".:tex//:"
 
@@ -23,9 +20,9 @@ CMD ["ccdc-bible.md", \
     "--include-in-header=build/preamble.tex", \
     "--include-in-header=build/buildinfo.tex", \
     "--toc", \
+    "--listings", \
     "-o", \ 
     "ccdc-bible.pdf", \
     "--pdf-engine=xelatex", \
-    "--listings", \
     "--lua-filter=build/h2-pagebreak.lua", \
     "--lua-filter=build/tipbox.lua"]
