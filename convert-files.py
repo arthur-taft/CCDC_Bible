@@ -15,16 +15,13 @@ parser.add_argument(
     "output", type=str, default="ccdc-bible.pdf", help="Path to output file"
 )
 parser.add_argument(
-    "--markdown_to_tex",
-    type=bool,
-    default=False,
+    "--md_to_tex",
+    action="store_true",
     help="Convert markdown to tex file",
 )
-parser.add_argument("--tex_to_pdf", type=bool, default=False, help="convert tex to pdf")
-parser.add_argument(
-    "--markdown_to_pdf", type=bool, default=True, help="Convert markdown to pdf"
-)
-parser.add_argument("--landscape", type=bool, default=False, help="Build landscape pdf")
+parser.add_argument("--tex_to_pdf", action="store_true", help="convert tex to pdf")
+parser.add_argument("--md_to_pdf", action="store_true", help="Convert markdown to pdf")
+parser.add_argument("--landscape", action="store_true", help="Build landscape pdf")
 
 
 args = parser.parse_args()
@@ -43,7 +40,7 @@ else:
     metadata_file_path = Path("build/meta.yaml")
     preamble_file_path = Path("build/preamble.tex")
 
-if args.markdown_to_tex:
+if args.md_to_tex:
     operation = "md_to_tex"
 elif args.tex_to_pdf:
     operation = "tex_to_pdf"
