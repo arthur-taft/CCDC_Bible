@@ -1,0 +1,5 @@
+== CCDC Bible
+
+The Bible
+
+image:media/write-that-down.png["Write that down"]
